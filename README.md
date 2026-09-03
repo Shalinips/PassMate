@@ -108,42 +108,7 @@ Feature	Description
 🛠️ Technology Stack
 </div> <table align="center"> <tr> <th>Layer</th> <th>Technology</th> </tr> <tr> <td>🎨 Frontend</td> <td><b>React.js</b></td> </tr> <tr> <td>⚙️ Backend</td> <td><b>Node.js + Express.js</b></td> </tr> <tr> <td>🗄️ Database</td> <td><b>MongoDB</b></td> </tr> <tr> <td>🔗 API</td> <td><b>REST API</b></td> </tr> <tr> <td>📄 Resources</td> <td><b>PDF Study Materials</b></td> </tr> </table>
 
-<div align="center">
-🔄 Application Flow
-</div>
-                    ┌───────────────────┐
-                    │      Student      │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │   React Frontend  │
-                    │                   │
-                    │ Year              │
-                    │ Semester          │
-                    │ Subject           │
-                    └─────────┬─────────┘
-                              │
-                              │ HTTP Request
-                              ▼
-                    ┌───────────────────┐
-                    │ Express REST API  │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │      MongoDB      │
-                    │                   │
-                    │ Year              │
-                    │ Semester          │
-                    │ Subject           │
-                    │ File URL          │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │   Matching PDF    │
-                    └───────────────────┘
+
 <div align="center">
 🚀 Getting Started
 </div>
