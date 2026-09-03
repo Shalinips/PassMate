@@ -5,112 +5,102 @@
 </p>
 
 <p align="center">
-  A student-friendly platform to find and access study materials
-  <br>
-  using <b>Year → Semester → Subject</b>
+  A simple full-stack platform for students to find study materials
+  by <b>Year → Semester → Subject</b>.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Frontend-React.js-61DAFB?style=for-the-badge&logo=react&logoColor=white">
-  <img src="https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
-  <img src="https://img.shields.io/badge/API-Express.js-000000?style=for-the-badge&logo=express&logoColor=white">
-  <img src="https://img.shields.io/badge/Database-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
-</p>
-
-<p align="center">
-  <b>Find. Learn. Pass. Repeat. 🚀</b>
+  <img src="https://img.shields.io/badge/React.js-Frontend-61DAFB?logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-API-000000?logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb&logoColor=white" />
 </p>
 
 ---
 
-## 💡 About PassMate
+## 💡 About the Project
 
-> **"Why search through five WhatsApp groups when your notes can be one click away?"** 😭
+**PassMate** is a full-stack web application created to make study materials easier to find and access.
 
-PassMate is a full-stack web application designed to make finding study materials easier for students.
+Students often search through WhatsApp groups, Google Drive folders, and old messages just to find one PDF.
 
-Instead of searching through multiple folders, messages, or groups, students can simply select:
+PassMate provides a simple solution:
 
-**Year → Semester → Subject**
+**Select your academic details → Find your notes → View / Download**
 
-and instantly find the available study materials.
-
-### 🎓 The Idea
-
-<p align="center">
-  <b>👨‍🎓 Seniors Share → 📚 Juniors Learn → 🎓 Everyone Wins</b>
-</p>
-
----
-
-## ⚡ How PassMate Works
-
-| Step | Action                             |
-| :--: | ---------------------------------- |
-|  1️⃣  | Select your **Year**               |
-|  2️⃣  | Select your **Semester**           |
-|  3️⃣  | Select your **Subject**            |
-|  4️⃣  | Click **Get Notes**                |
-|  5️⃣  | View or download the available PDF |
-
-### 🔄 Basic Flow
-
-```text
-Student
-   │
-   ▼
-React Frontend
-   │
-   │  GET /notes
-   ▼
-Express + Node.js
-   │
-   ▼
-MongoDB
-   │
-   ▼
-Matching Study Materials
-   │
-   ▼
-📄 PDF Notes
-```
+> 📚 Seniors Share → 🎓 Juniors Learn → 🚀 Everyone Benefits
 
 ---
 
 ## ✨ Features
 
-| Feature                    | Description                                                       |
-| :------------------------- | :---------------------------------------------------------------- |
-| 🔎 **Smart Selection**     | Find notes using Year, Semester and Subject                       |
-| 📚 **Organized Materials** | Study resources are categorized for easy access                   |
-| 📄 **PDF Access**          | View and download available PDF notes                             |
-| ⚡ **REST API**            | Frontend communicates with backend using REST APIs                |
-| 🗄️ **MongoDB Storage**     | Stores note metadata such as year, semester, subject and file URL |
-| 🎨 **Simple UI**           | Clean and student-friendly interface                              |
-| 🔗 **Backend Integration** | React frontend connected to Express backend                       |
+- 🔎 Search notes using **Year, Semester and Subject**
+- 📚 Organized study materials
+- 📄 View and download PDF notes
+- ⚡ Fast REST API communication
+- 🗄️ MongoDB database for note information
+- 🎨 Simple and student-friendly interface
+- 🔗 React frontend connected with Node.js/Express backend
 
 ---
 
-## 🛠️ Technology Stack
+## 🧩 How It Works
 
-|      Layer       | Technology               |
-| :--------------: | :----------------------- |
-|   🎨 Frontend    | **React.js**             |
-|    ⚙️ Backend    | **Node.js + Express.js** |
-|   🗄️ Database    | **MongoDB**              |
-|      🔗 API      | **REST API**             |
-|   📄 Resources   | **PDF Study Materials**  |
-| 🌐 Communication | **HTTP / Fetch API**     |
+```text
+        👨‍🎓 Student
+             │
+             ▼
+     ┌─────────────────┐
+     │  React Frontend │
+     │                 │
+     │ Year            │
+     │ Semester        │
+     │ Subject         │
+     └────────┬────────┘
+              │
+              │ GET /notes
+              ▼
+     ┌─────────────────┐
+     │ Express + Node  │
+     │     REST API    │
+     └────────┬────────┘
+              │
+              ▼
+     ┌─────────────────┐
+     │     MongoDB     │
+     │                 │
+     │ Year            │
+     │ Semester        │
+     │ Subject         │
+     │ File URL        │
+     └────────┬────────┘
+              │
+              ▼
+          📄 PDF Notes
+```
 
 ---
 
-## 🏗️ Project Structure
+## 🛠️ Tech Stack
+
+| Technology     | Purpose                        |
+| -------------- | ------------------------------ |
+| **React.js**   | Frontend user interface        |
+| **Node.js**    | Backend runtime                |
+| **Express.js** | REST API                       |
+| **MongoDB**    | Database                       |
+| **Mongoose**   | MongoDB object modeling        |
+| **Fetch API**  | Frontend-backend communication |
+| **CSS**        | User interface styling         |
+
+---
+
+## 📁 Project Structure
 
 ```text
 PassMate/
 │
 ├── backend/
-│   │
 │   ├── models/
 │   │   └── Note.js
 │   │
@@ -125,7 +115,6 @@ PassMate/
 │   └── package-lock.json
 │
 ├── frontend/
-│   │
 │   ├── public/
 │   │
 │   ├── src/
@@ -143,47 +132,6 @@ PassMate/
 
 ---
 
-## 🔄 Application Architecture
-
-```text
-                    ┌─────────────────────┐
-                    │       STUDENT       │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   REACT FRONTEND    │
-                    │                     │
-                    │  Year               │
-                    │  Semester           │
-                    │  Subject            │
-                    └──────────┬──────────┘
-                               │
-                               │ HTTP Request
-                               ▼
-                    ┌─────────────────────┐
-                    │   EXPRESS REST API  │
-                    │      /notes         │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │       MONGODB       │
-                    │                     │
-                    │  Year               │
-                    │  Semester           │
-                    │  Subject            │
-                    │  File URL           │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    📄 PDF NOTES     │
-                    └─────────────────────┘
-```
-
----
-
 ## 🔌 API Endpoints
 
 ### Get Notes
@@ -192,7 +140,7 @@ PassMate/
 GET /notes
 ```
 
-Used to find notes based on:
+Search notes using:
 
 ```text
 year
@@ -212,7 +160,7 @@ GET /notes?year=2&semester=4&subject=Database%20Management%20Systems
 POST /notes
 ```
 
-Used to add note information to MongoDB.
+Adds note information to MongoDB.
 
 ### Delete a Note
 
@@ -220,87 +168,64 @@ Used to add note information to MongoDB.
 DELETE /notes/:id
 ```
 
-Used to remove a note from the database.
+Deletes a note from the database.
 
 ---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
+### Prerequisites
+
+Make sure you have installed:
+
+- **Node.js**
+- **MongoDB**
+- **Git**
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Shalinips/PassMate.git
-```
-
-```bash
 cd PassMate
 ```
 
----
+### 2. Start MongoDB
 
-### 2️⃣ Start MongoDB
+Make sure your local MongoDB server is running.
 
-Make sure MongoDB is running on your system.
-
-PassMate uses the following local database:
+PassMate uses:
 
 ```text
 mongodb://127.0.0.1:27017/passmateDB
 ```
 
----
+### 3. Start the Backend
 
-### 3️⃣ Start the Backend
-
-Open a terminal and run:
+Open a terminal:
 
 ```bash
 cd backend
-```
-
-Install the dependencies:
-
-```bash
 npm install
-```
-
-Start the server:
-
-```bash
 node server.js
 ```
 
-The backend will run at:
+Backend:
 
 ```text
 http://localhost:5000
 ```
 
----
+### 4. Start the Frontend
 
-### 4️⃣ Start the Frontend
-
-Open **another terminal**.
-
-Go to the frontend folder:
+Open another terminal:
 
 ```bash
 cd frontend
-```
-
-Install dependencies:
-
-```bash
 npm install
-```
-
-Start React:
-
-```bash
 npm start
 ```
 
-The frontend will run at:
+Frontend:
 
 ```text
 http://localhost:3000
@@ -308,63 +233,47 @@ http://localhost:3000
 
 ---
 
-## 📸 Project Preview
+## 📸 Preview
 
 <p align="center">
-  <i>PassMate provides a simple interface where students can select their academic details and access available notes.</i>
+  <i>PassMate — Your simple study-material companion.</i>
 </p>
+
+<!-- Add project screenshots here -->
 
 ---
 
-## 🔮 Future Scope
+## 🔮 Future Improvements
 
-```text
-🔐 Student & Admin Authentication
-                ↓
-⬆️ Direct PDF Upload
-                ↓
-☁️ Cloud Storage
-                ↓
-🔎 Advanced Search
-                ↓
-⭐ Notes Rating & Feedback
-                ↓
-📱 Improved Mobile Experience
-                ↓
-👨‍💼 Admin Dashboard
-```
-
-### Planned Improvements
-
-- 🔐 User authentication
-- 👨‍💼 Admin panel for managing notes
+- 🔐 Student and Admin authentication
+- 👨‍💼 Admin dashboard
 - ⬆️ Direct PDF upload
-- ☁️ Cloud-based file storage
+- ☁️ Cloud storage
 - 🔎 Advanced search and filtering
 - ⭐ Notes rating and feedback
-- 📱 Better mobile responsiveness
-- 📊 Usage and download analytics
+- 📱 Improved mobile experience
+- 📊 Download and usage analytics
 
 ---
 
-## ❤️ The PassMate Promise
+## 🎯 Project Goal
 
-<p align="center">
+The goal of PassMate is simple:
 
-### Seniors Share.
+> **Make finding study materials easier, faster and more organized for students.**
 
-### Juniors Learn.
+No more searching through countless messages.
 
-### Everyone Passes. 🎓
+No more asking seniors for the same PDF again.
 
-</p>
+Just:
+
+**Year → Semester → Subject → Notes 📚**
 
 ---
 
+<h3 align="center">❤️ Seniors Share. Juniors Learn. Everyone Passes.</h3>
+
 <p align="center">
-  <b>📚 PassMate</b>
-  <br>
-  <i>Your Senior's Got Your Back.</i>
-  <br><br>
-  Made with ❤️ by a student, for students.
+  <b>PassMate</b> — Your Senior's Got Your Back. 🎓
 </p>
