@@ -107,39 +107,7 @@ Feature	Description
 <div align="center">
 🛠️ Technology Stack
 </div> <table align="center"> <tr> <th>Layer</th> <th>Technology</th> </tr> <tr> <td>🎨 Frontend</td> <td><b>React.js</b></td> </tr> <tr> <td>⚙️ Backend</td> <td><b>Node.js + Express.js</b></td> </tr> <tr> <td>🗄️ Database</td> <td><b>MongoDB</b></td> </tr> <tr> <td>🔗 API</td> <td><b>REST API</b></td> </tr> <tr> <td>📄 Resources</td> <td><b>PDF Study Materials</b></td> </tr> </table>
-<div align="center">
-🏗️ Project Structure
-</div>
-PassMate/
-│
-├── backend/
-│   │
-│   ├── models/
-│   │   └── Note.js
-│   │
-│   ├── routes/
-│   │   └── notes.js
-│   │
-│   ├── notes/
-│   │   └── DBMS_Notes.pdf
-│   │
-│   ├── server.js
-│   ├── package.json
-│   └── package-lock.json
-│
-├── frontend/
-│   │
-│   ├── public/
-│   │
-│   ├── src/
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── index.js
-│   │
-│   ├── package.json
-│   └── package-lock.json
-│
-└── README.md
+
 <div align="center">
 🔄 Application Flow
 </div>
