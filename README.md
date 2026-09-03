@@ -31,7 +31,7 @@
 
 </div>
 
-> **"Why search through five WhatsApp groups when your notes can be one click away?"** 😭
+> **"Why search through five WhatsApp groups when your notes can be one click away?"** 
 
 PassMate is a full-stack web application designed to make it easier for students to find and access study materials.
 
@@ -180,7 +180,7 @@ PassMate/
 🚀 Getting Started
 </div>
 1️⃣ Clone the repository
-git clone https://github.com/YOUR-USERNAME/PassMate.git
+git clone https://github.com/Shalinips/PassMate.git
 cd PassMate
 2️⃣ Start the Backend
 cd backend
